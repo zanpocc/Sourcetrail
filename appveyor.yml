@@ -7,6 +7,9 @@ before_build:
     - cd build
     - mkdir temp
     - cd ../
+    - cd script
+    - cmd: "\"C:/Program Files/Git/usr/bin/bash.exe\" update_java_indexer.sh" 
+    - cd ../
     - cd build
     - mkdir win64
     - cd win64
