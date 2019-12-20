@@ -44,6 +44,9 @@ SET
 echo "bar"
 echo %M2_HOME%
 echo %MAVEN_HOME%
+printenv
+printenv M2_HOME
+printenv MAVEN_HOME
 echo "baz"
 
 
