@@ -234,7 +234,7 @@ if (BUILD_JAVA_LANGUAGE_PACKAGE)
 	add_custom_command(
 		TARGET ${LIB_JAVA_PROJECT_NAME}
 		PRE_BUILD
-		COMMAND ${PROJECT_SOURCE_DIR}/script/update_java_indexer.sh
+		COMMAND "C:/Program Files/Git/usr/bin/bash.exe" ${PROJECT_SOURCE_DIR}/script/update_java_indexer.sh
 		COMMENT "updating java indexer jars"
 	)
 
