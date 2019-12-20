@@ -39,6 +39,10 @@ echo "This script is running in: $SCRIPT_DIR"
 cd $SCRIPT_DIR/
 cd ..
 
+echo "foo"
+SET
+echo "bar"
+
 cd java_indexer
 
 echo -e $INFO "cleaning and building java_indexer.jar"
