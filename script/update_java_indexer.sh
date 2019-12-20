@@ -42,6 +42,11 @@ cd ..
 echo "foo"
 SET
 echo "bar"
+echo %M2_HOME%
+echo %MAVEN_HOME%
+echo "baz"
+
+
 
 cd java_indexer
 
