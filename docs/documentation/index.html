@@ -124,7 +124,7 @@
 					<p>This short introduction will briefly guide you through the project setup and the user interface of Sourcetrail. The bullet point lists will provide you with the next steps to take:</p>
 
 					<h2>Starting Up Sourcetrail</h2>
-					
+
 					<p>Once you've <a href="https://github.com/CoatiSoftware/Sourcetrail/releases">downloaded</a> Sourcetrail successfully you are ready to run the application. For assistance wth installation, visit the <a href="#Installation">installation</a> section.</p>
 
 					<div class="callout callout-info">
@@ -152,7 +152,7 @@
 
 
 					<h2>Creating a New Project</h2>
-					
+
 					<p>When creating a new Sourcetrail project you will use the <a href="#ProjectSetupWizard"> Project Setup Wizard </a>. This wizard splits the setup process into several subsequent steps. Depending on your project's structure and the used build system, there are different types for project setup. Choosing the correct setup method is important and can make the setup process a lot easier.</p>
 
 					<div class="callout callout-info">
@@ -166,7 +166,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<img src="img/project_setup_wizard_start.png" style="width:100%;">
-						</div> 
+						</div>
 					</div>
 
 					<h3>Add Source Group</h3>
@@ -1190,11 +1190,19 @@
 
 
 					<h3>Shortcuts</h3>
+
+					<h4>General</h4>
 					<table class="table table-hover">
 						<thead>
-							<tr> <th>Shortcut</th> <th>Windows</th> <th>Mac OS X</th> <th>Linux</th> </tr>
+							<tr> <th>Shortcut</th> <th>Windows</th> <th>macOS</th> <th>Linux</th> </tr>
 						</thead>
 						<tbody>
+							<tr>
+								<th scope="row">Switch Focus Between Graph/Code Views</th>
+								<td><kbd>Tab</kbd></td>
+								<td><kbd>Tab</kbd></td>
+								<td><kbd>Tab</kbd></td>
+							</tr>
 							<tr>
 								<th scope="row">Preferences</th>
 								<td><kbd>Ctrl + ,</kbd></td>
@@ -1239,15 +1247,15 @@
 							</tr>
 							<tr>
 								<th scope="row">Back</th>
-								<td><kbd>Ctrl + Z</kbd> / <kbd>Backspace</kbd></td>
-								<td><kbd>Cmd + Z</kbd> / <kbd>Backspace</kbd></td>
-								<td><kbd>Ctrl + Z</kbd> / <kbd>Backspace</kbd></td>
+								<td><kbd>Z</kbd> / <kbd>Alt + Left</kbd> / <kbd>Backspace</kbd></td>
+								<td><kbd>Z</kbd> / <kbd>Cmd + [</kbd> / <kbd>Backspace</kbd></td>
+								<td><kbd>Z</kbd> / <kbd>Alt + Left</kbd> / <kbd>Backspace</kbd></td>
 							</tr>
 							<tr>
 								<th scope="row">Forward</th>
-								<td><kbd>Ctrl + Shift + Z</kbd></td>
-								<td><kbd>Cmd + Shift + Z</kbd></td>
-								<td><kbd>Ctrl + Shift + Z</kbd></td>
+								<td><kbd>Shift + Z</kbd> / <kbd>Alt + Right</kbd></td>
+								<td><kbd>Shift + Z</kbd> / <kbd>Cmd + ]</kbd></td>
+								<td><kbd>Shift + Z</kbd> / <kbd>Alt + Right</kbd></td>
 							</tr>
 							<tr>
 								<th scope="row">Find Symbol</th>
@@ -1266,30 +1274,6 @@
 								<td><kbd>Ctrl + D</kbd></td>
 								<td><kbd>Cmd + D</kbd></td>
 								<td><kbd>Ctrl + D</kbd></td>
-							</tr>
-							<tr>
-								<th scope="row">Next Reference</th>
-								<td><kbd>Ctrl + G</kbd></td>
-								<td><kbd>Cmd + G</kbd></td>
-								<td><kbd>Ctrl + G</kbd></td>
-							</tr>
-							<tr>
-								<th scope="row">Previous Reference</th>
-								<td><kbd>Ctrl + Shift + G</kbd></td>
-								<td><kbd>Cmd + Shift + G</kbd></td>
-								<td><kbd>Ctrl + Shift + G</kbd></td>
-							</tr>
-							<tr>
-								<th scope="row">Next Local Reference</th>
-								<td><kbd>Ctrl + T</kbd></td>
-								<td><kbd>Cmd + T</kbd></td>
-								<td><kbd>Ctrl + T</kbd></td>
-							</tr>
-							<tr>
-								<th scope="row">Previous Local Reference</th>
-								<td><kbd>Ctrl + Shift + T</kbd></td>
-								<td><kbd>Cmd + Shift + T</kbd></td>
-								<td><kbd>Ctrl + Shift + T</kbd></td>
 							</tr>
 							<tr>
 								<th scope="row">To overview</th>
@@ -1350,6 +1334,126 @@
 								<td><kbd>Ctrl + B</kbd></td>
 								<td><kbd>Cmd + B</kbd></td>
 								<td><kbd>Ctrl + B</kbd></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h4>Graph View</h4>
+					<table class="table table-hover">
+						<thead>
+							<tr> <th>Shortcut</th> <th>Windows</th> <th>macOS</th> <th>Linux</th> </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Move Focus Within Nodes</th>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Move Focus Within Edges</th>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Activate Node/Edge</th>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Activate Node in New Tab</th>
+								<td><kbd>Ctrl + Shift + Enter</kbd> / <kbd>Ctrl + Shift + E</kbd></td>
+								<td><kbd>Cmd + Shift + Enter</kbd> / <kbd>Cmd + Shift + E</kbd></td>
+								<td><kbd>Ctrl + Shift + Enter</kbd> / <kbd>Ctrl + Shift + E</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Expand/Collapse Node</th>
+								<td><kbd>Shift + Enter</kbd> / <kbd>Shift + E</kbd></td>
+								<td><kbd>Shift + Enter</kbd> / <kbd>Shift + E</kbd></td>
+								<td><kbd>Shift + Enter</kbd> / <kbd>Shift + E</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Zoom In</th>
+								<td><kbd>Alt + W</kbd> / <kbd>Ctrl + Mouse Wheel Up</kbd></td>
+								<td><kbd>Alt + W</kbd> / <kbd>Cmd + Mouse Wheel Up</kbd></td>
+								<td><kbd>Alt + W</kbd> / <kbd>Ctrl + Mouse Wheel Up</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Zoom Out</th>
+								<td><kbd>Alt + S</kbd> / <kbd>Ctrl + Mouse Wheel Down</kbd></td>
+								<td><kbd>Alt + S</kbd> / <kbd>Cmd + Mouse Wheel Down</kbd></td>
+								<td><kbd>Alt + S</kbd> / <kbd>Ctrl + Mouse Wheel Down</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Reset Zoom</th>
+								<td><kbd>0</kbd></td>
+								<td><kbd>0</kbd></td>
+								<td><kbd>0</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Open Custom Trail Dialog</th>
+								<td><kbd>Ctrl + U</kbd></td>
+								<td><kbd>Cmd + U</kbd></td>
+								<td><kbd>Ctrl + U</kbd></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h4>Code View</h4>
+					<table class="table table-hover">
+						<thead>
+							<tr> <th>Shortcut</th> <th>Windows</th> <th>macOS</th> <th>Linux</th> </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Next Reference</th>
+								<td><kbd>Ctrl + G</kbd></td>
+								<td><kbd>Cmd + G</kbd></td>
+								<td><kbd>Ctrl + G</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Previous Reference</th>
+								<td><kbd>Ctrl + Shift + G</kbd></td>
+								<td><kbd>Cmd + Shift + G</kbd></td>
+								<td><kbd>Ctrl + Shift + G</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Next Local Reference</th>
+								<td><kbd>Ctrl + T</kbd></td>
+								<td><kbd>Cmd + T</kbd></td>
+								<td><kbd>Ctrl + T</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Previous Local Reference</th>
+								<td><kbd>Ctrl + Shift + T</kbd></td>
+								<td><kbd>Cmd + Shift + T</kbd></td>
+								<td><kbd>Ctrl + Shift + T</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Move Focus Within Code</th>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+								<td><kbd>WASD</kbd> / <kbd>HJKL</kbd> / <kbd>Arrows</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Move Focus to Closest Reference</th>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+								<td><kbd>Shift + WASD</kbd> / <kbd>Shift + HJKL</kbd> / <kbd>Shift + Arrows</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Activate Location</th>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+								<td><kbd>Enter</kbd> / <kbd>E</kbd></td>
+							</tr>
+							<tr>
+								<th scope="row">Activate Location in New Tab</th>
+								<td><kbd>Ctrl + Shift + Enter</kbd> / <kbd>Ctrl + Shift + E</kbd></td>
+								<td><kbd>Cmd + Shift + Enter</kbd> / <kbd>Cmd + Shift + E</kbd></td>
+								<td><kbd>Ctrl + Shift + Enter</kbd> / <kbd>Ctrl + Shift + E</kbd></td>
 							</tr>
 						</tbody>
 					</table>

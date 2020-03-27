@@ -223,7 +223,7 @@ QTableWidget* QtKeyboardShortcuts::createCodeViewShortcutsTable()
 		 Shortcut(
 			 QStringLiteral("Move Focus to Closest Reference"),
 			 QStringLiteral("Shift + WASD | Shift + HJKL | Shift + Arrows")),
-		 Shortcut(QStringLiteral("Activate Focused Location"), QStringLiteral("Enter | E")),
+		 Shortcut(QStringLiteral("Activate Location"), QStringLiteral("Enter | E")),
 		 Shortcut::defaultOrMac(
 			 QStringLiteral("Activate Location in New Tab"),
 			 QStringLiteral("Ctrl + Shift + Enter | Ctrl + Shift + E"),
@@ -257,19 +257,19 @@ QTableWidget* QtKeyboardShortcuts::createGraphViewShortcutsTable()
 			 QStringLiteral("Move Focus Within Edges"),
 			 QStringLiteral("Shift + WASD | Shift + HJKL | Shift + Arrows")),
 		 Shortcut(QStringLiteral("Activate Node/Edge"), QStringLiteral("Enter | E")),
-		 Shortcut(QStringLiteral("Expand/Collaps Node"), QStringLiteral("Shift + Enter | Shift + E")),
+		 Shortcut(QStringLiteral("Expand/Collapse Node"), QStringLiteral("Shift + Enter | Shift + E")),
 		 Shortcut::defaultOrMac(
 			 QStringLiteral("Activate Node in New Tab"),
 			 QStringLiteral("Ctrl + Shift + Enter | Ctrl + Shift + E"),
 			 QStringLiteral("Cmd + Shift + Enter | Cmd + Shift + E")),
 		 Shortcut::defaultOrMac(
 			 QStringLiteral("Zoom in"),
-			 QStringLiteral("Alt + W | Ctrl + Mousewheel up"),
-			 QStringLiteral("Alt + W | Cmd + Mousewheel up")),
+			 QStringLiteral("Alt + W | Ctrl + Mousew Wheel Up"),
+			 QStringLiteral("Alt + W | Cmd + Mousew Wheel Up")),
 		 Shortcut::defaultOrMac(
 			 QStringLiteral("Zoom out"),
-			 QStringLiteral("Alt + S | Ctrl + Mousewheel down"),
-			 QStringLiteral("Alt + S | Cmd + Mousewheel down")),
+			 QStringLiteral("Alt + S | Ctrl + Mousew Wheel Down"),
+			 QStringLiteral("Alt + S | Cmd + Mousew Wheel Down")),
 		 Shortcut(QStringLiteral("Reset Zoom"), QStringLiteral("0")),
 		 Shortcut::defaultOrMac(
 			 QStringLiteral("Open Custom Trail Dialog"),
