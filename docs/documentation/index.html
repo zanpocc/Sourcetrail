@@ -447,10 +447,10 @@
 
 					<h1>Installation</h1>
 
-					<h2>On Windows</h2>
+					<h2>Windows</h2>
 					<p>Download and open the zip file and extract its contents into a temporary folder of your choice. Run the <var><code>setup.exe</code></var> and go through the wizard. You can now launch Sourcetrail from your start menu.</p>
 
-					<h2>On Mac</h2>
+					<h2>macOS</h2>
 					<p>Download and open the Sourcetrail.dmg file and drag Sourcetrail.app into the applications folder. You can now launch Sourcetrail from your Applications.</p>
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
@@ -458,10 +458,16 @@
 						</div>
 					</div>
 
-					<h2>On Linux</h2>
-					<p>Download Sourcetrail.tar.gz file and extract it. To start Sourcetrail run the <code>Sourcetrail.sh</code> script. Sourcetrail creates a folder <code>~/.config/sourcetrail</code> at the first run, this is the folder for Sourcetrail settings.</p>
+					<h2>Linux</h2>
+					<h3>Tarball</h3>
+					<p>Download the <code>.tar.gz</code> file and extract it. To start Sourcetrail run the <code>Sourcetrail.sh</code> script. Sourcetrail creates a folder <code>~/.config/sourcetrail</code> at the first run, this is the folder for Sourcetrail settings.</p>
 
 					<p>To Install Sourcetrail run the <code>install.sh</code> script with <code>sudo</code>, it will install Sourcetrail to <code>/opt/sourcetrail</code> and create <code>/usr/bin/sourcetrail</code> symlink.</p>
+
+					<h3>AppImage</h3>
+					<p>Download the <code>.AppImage</code> file. Give it permission to execute with <code>chmod a+x</code> or via the context menu. To start Sourcetrail double click it or execute it from the Terminal. Sourcetrail creates a folder <code>~/.config/sourcetrail</code> at the first run, this is the folder for Sourcetrail settings.</p>
+
+					<p>For more information on AppImages please visit <a href="https://appimage.org/">appimage.org</a>.</p>
 
 					<h2>Data folder</h2>
 					<p>The data folder holds certain files that are used by Sourcetrail to run the program. After following the <a href="#INSTALLATION">installation instructions</a> the data folder should be located in the following locations on your platform.</p>
@@ -471,26 +477,26 @@
 						</thead>
 						<tbody>
 							<tr> <th scope="row">Windows</th> <td>C:/Users/You/AppData/Local/Coati Software/Sourcetrail <small>(used for dynamic data and settings)</small><br />install_directory/Coati Software/Sourcetrail/data <small>(used for static app data)</small></td> </tr>
-							<tr> <th scope="row">Mac</th> <td>~/Library/Application Support/Sourcetrail</td> </tr>
+							<tr> <th scope="row">macOS</th> <td>~/Library/Application Support/Sourcetrail</td> </tr>
 							<tr> <th scope="row">Linux</th> <td>~/.config/sourcetrail</td> </tr>
 						</tbody>
 					</table>
 
 					<h2>Finding System Header Locations</h2>
 
-					<h3>On Windows</h3>
+					<h3>Windows</h3>
 					<p>These files usually ship with your compiler. For the Visual Studio IDE the system headers can be found at:</p>
 					<pre>&lt;path_to_visual_studio&gt;/VC/include/</pre>
 					<p>If you don't use the Visual Studio IDE you can also try to find your system headers in a subdirectory of:</p>
 					<pre>C:/Program Files (x86)/Windows Kits/</pre>
 
-					<h3>On Mac</h3>
+					<h3>macOS</h3>
 					<p>Run this command in your terminal:</p>
 					<pre>gcc -x c++ -v -E /dev/null</pre>
 					<p>You will find the header search paths your compiler uses in the output between these two lines:</p>
 					<pre>#include <...> search starts here:<br />.<br />.<br />.<br />End of search list.</pre>
 
-					<h3>On Linux</h3>
+					<h3>Linux</h3>
 					<pre>gcc -x c++ -v -E /dev/null</pre>
 					or
 					<pre>clang -x c++ -v -E /dev/null</pre>
@@ -502,11 +508,11 @@
 
 					<p>The current version of Sourcetrail requires an installation of the Java 8 runtime environment to index any Java project. Make sure that Sourcetrail and your JRE share the same kind or architecture (a 32 bit Sourcetrail requires a 32 bit JRE). To locate the required library file, please refer to the applicable description below.</p>
 
-					<h3>On Windows</h3>
+					<h3>Windows</h3>
 					<p>The Java Runtime Library (called <code>jvm.dll</code>) can be found inside of your JRE install folder and looks like this:</p>
 					<pre>&lt;path_to_jre&gt;/bin/client/jvm.dll</pre>
 
-					<h3>On Mac</h3>
+					<h3>macOS</h3>
 					<p>The Java Runtime Library (called <code>libjli.dylib</code>) can be found inside of your JRE install folder. Run the following command in your terminal to find the location of your default Java installation:</p>
 					<pre>/usr/libexec/java_home</pre>
 
@@ -518,7 +524,7 @@
 
 					<p>Insert the full path to <code>libjli.dylib</code> into the <strong>Java Path</strong> setting in the <a href="#PreferencesWindow">Preferences Window</a>.</p>
 
-					<h3>On Linux</h3>
+					<h3>Linux</h3>
 					<p>The Java Runtime Library (called <code>libjvm.so</code>) can be found inside of your JRE install folder and looks like this:</p>
 					<pre>&lt;path_to_jre&gt;/lib/&lt;arch&gt;/server/libjvm.so</pre>
 
@@ -2551,7 +2557,7 @@
 							<tr> <th scope="row">--maven-path</th> <td>Path to the maven executable.</td> </tr>
 							<tr> <th scope="row">--jre-system-library-paths</th> <td>Path to the jars of the JRE system library. These jars can be found inside the JRE install directory.</td> </tr>
 							<tr> <th scope="row">--global-header-search-paths</th> <td>The Global Include Paths will be used in all your projects - in addition to the project specific Include Paths. These paths are usually passed to the compiler with the '-isystem' flag. Use them to add system header paths (See <a href="#FindingSystemHeaderLocations">Finding System Header Locations</a> or use the auto detection below).</td> </tr>
-							<tr> <th scope="row">--global-framework-search-paths</th> <td>The Global Framework Search Paths will be used in all your projects - in addition to the project specific Framework Search Paths. They define where MacOS framework containers (.framework) are found <a href="#FindingSystemHeaderLocations">Finding System Header Locations</a> or use the auto detection below).</td> </tr>
+							<tr> <th scope="row">--global-framework-search-paths</th> <td>The Global Framework Search Paths will be used in all your projects - in addition to the project specific Framework Search Paths. They define where macOS framework containers (.framework) are found <a href="#FindingSystemHeaderLocations">Finding System Header Locations</a> or use the auto detection below).</td> </tr>
 							<tr> <th scope="row">--show</th> <td>Display the settings and values.</td> </tr>
 						</tbody>
 					</table>
